@@ -22,7 +22,7 @@ function resetGrid() {
 function makeGrid() {
     for(let rowIndex = 0; rowIndex < height.val(); rowIndex++) {
         var row = "<tr>";
-        for(let colIndex = 0; colIndex < width.val(); colIndex++) {
+        for(let colndex = 0; colndex < width.val(); colndex++) {
             row += "\n<td></td>";
         }
         row += "\b</tr>";
