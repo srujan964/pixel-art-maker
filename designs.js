@@ -17,19 +17,21 @@ function resetGrid() {
     grid.empty();
 }
 
+//Adds an event listener to every table cell 
+$('#pixelCanvas').on('click', 'tr td', function() {
+    $(this).attr("style", "background-color: " + color.val());
+  });
 
-//Function to create a new grid, and adds an event listener to color these cells.
+//Function to create a new grid.
 function makeGrid() {
     for(let rowIndex = 0; rowIndex < height.val(); rowIndex++) {
         var row = "<tr>";
-        for(let collndex = 0; collndex < width.val(); collndex++) {
+        for(let colIndex = 0; colIndex < width.val(); colIndex++) {
             row += "\n<td></td>";
         }
         row += "\b</tr>";
         grid.append(row);
-        $("td").on("click", function setCell() {
-            $(this).attr("style", "background-color: " + color.val());
-        });
     }
+    
 }
 
