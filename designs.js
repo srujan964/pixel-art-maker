@@ -1,5 +1,5 @@
 //Variable declarations
-let width = $("#inputWeight");
+let width = $("#inputWidth");
 let height = $("#inputHeight");
 let grid = $("#pixelCanvas");
 let color = $("#colorPicker");
